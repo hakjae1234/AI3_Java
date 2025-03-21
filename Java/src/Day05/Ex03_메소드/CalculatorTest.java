@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class CalculatorTest {
 
 	public static void main(String[] args) {
+		
 		// 계산기 객체 생성
 		Calculator calculator = new Calculator();
-		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("a : ");
 		int a = sc.nextInt();
@@ -17,14 +17,15 @@ public class CalculatorTest {
 		// 덧셈 메소드 호출
 		int result1 = calculator.plus(a, b);
 		System.out.println("a + b = " + result1);
+		
 		// 뺄셈 메소드 호출
 		int result2 = calculator.minus(a, b);
 		System.out.println("a - b = " + result2);
-
 		System.out.println("x : ");
-		double x = sc.nextInt();
+		double x = sc.nextDouble();
 		System.out.println("y : ");
-		double y = sc.nextInt();
+		double y = sc.nextDouble();
+		
 		// 곱셈 메소드 호출
 		double result3 = calculator.multiple(x, y);
 		System.out.println("x * y = " + result3);

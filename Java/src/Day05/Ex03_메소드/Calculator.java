@@ -30,13 +30,13 @@ public class Calculator {
 		return result;
 	}
 		//곱셈
-	public int multiple(double a, double b) {
+	public double multiple(double a, double b) {
 		double result = a * b;
 		return result;
 	}
 		
 		// 나눗셈
-	public int divide(double a, double b) {
+	public double divide(double a, double b) {
 		double result = a / b;
 		return result;
 	}		
@@ -48,21 +48,24 @@ public class Calculator {
 			// 합계
 	public int sum(int[] arr) {
 	int sum = 0;
-	for (int i = 0; i < array.length; i++) {
+	for (int i = 0; i < arr.length; i++) {
 	sum += arr[i];
-	return sum;
 	}
+	return sum;
 	}
 						
 			
-		// 평균
-					public double avg(int[] arr) {
-					int sum=sum(arr);
-					double avg = (double) sum / arr.length;
-					return avg; 
-			
-					}
+	// 평균 
+	public double avg(int[] arr) {
+		int sum = sum(arr);
+		double avg = (double) sum / arr.length;
+		return avg;
 
-		
+		}
+
+	public int minus(int a, int b) {
+		return 0;
 	}
 
+	
+		}
